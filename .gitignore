@@ -1,0 +1,61 @@
+# 여러 언어 및 프레임워크에서 자동으로 생성되는 파일 및 디렉토리
+/node_modules
+/.vscode
+/.idea
+/.DS_Store
+
+# 로컬 환경 설정 파일
+/.env
+/.env.local
+.env.local
+/.env.development
+/.env.test
+/.env.production
+
+# 빌드 결과물 및 로깅 파일
+/dist
+/log
+/build
+/coverage
+/coverage-report
+
+# 개발 중 생성되는 임시 파일
+/*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/.npm
+
+# 특정 확장자나 패턴과 일치하는 파일
+*.log
+*.swp
+*.swo
+*.db
+*.sqlite
+*.DS_Store
+
+# 개인 데이터나 보안 정보
+*.pem
+*.key
+*.pub
+*.cer
+*.crt
+*.csr
+*.pfx
+*.p12
+*.password
+
+# 작업 환경 또는 개발자 관련 파일
+.sass-cache
+.cache
+.vscode
+.env.local
+.env.development
+.env.test
+.env.production
+.envrc
+
+# Docker 컨테이너 관련 파일
+Dockerfile
+docker-compose.yml
+docker-compose.override.yml
