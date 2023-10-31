@@ -7,6 +7,7 @@ const nunjucks = require('nunjucks');
 const dotenv = require('dotenv');
 
 dotenv.config();
+const webSoket = require('./socket');
 const indexRouter = require('./routes');
 
 const app = express();
@@ -48,6 +49,11 @@ app.use((err,req,res,next) => {
   res.status(err.status || 500);
   res.render('error');
 });
+
+const server = app.listen(app.get('port'), () => {
+  console.log(app.get('port'), '번 포트에서 대기 중')
+})
+webSoket(server);
 
 // app listen
 
