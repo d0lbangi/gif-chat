@@ -2,22 +2,22 @@ const mongoose = require('mongoose');
 
 const { Schema } = mongoose;
 const roomSchema = new Schema({
-  title: {          // 방 제목
+  title: {
     type: String,
     required: true,
   },
-  max: {            // 최대 수용 인원
+  max: {
     type: Number,
     required: true,
     default: 10,
     min: 2,
   },
-  owner: {          // 방장
+  owner: {
     type: String,
     required: true,
   },
-  password: String, // 비밀번호(설정하면 비밀방, 설정하지 않으면 공개방)
-  createdAt: {      // 생성 시간
+  password: String,
+  createdAt: {
     type: Date,
     default: Date.now,
   },
